@@ -6,12 +6,13 @@
 
 body {
     background-color: #d1d1d0b8;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main-content {
     max-width: 95vw;
     margin: 0px auto;
-    /* background-color: white; */
+    /* background-color: white;     */
 }
 
 .navbar {
@@ -49,6 +50,7 @@ img {
 .box,
 .business {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: #f3f3edb8;
 }
 
 main .box1 {
@@ -87,6 +89,11 @@ button {
     display: grid;
     justify-items: center;
     row-gap: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.boxes .box:hover{
+    background-color: orange;
 }
 
 .boxes img{
@@ -120,6 +127,18 @@ button {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 10px;
     grid-auto-rows: minmax(180px, 200px);
+}
+
+.gallery img{
+    border-radius: 21px;
+}
+.gallery .box{
+    transition: 0.3s ease-in-out;
+    border-radius: 21px;
+}
+
+.gallery .box:hover{
+    scale: 1.07;
 }
 
 
